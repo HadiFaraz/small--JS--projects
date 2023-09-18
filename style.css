@@ -1,0 +1,132 @@
+body {
+    background: #151616;
+    margin: 0;
+}
+
+nav {
+    background: #000;
+    box-shadow: 0 5px 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav-toggle {
+    font-size: 1.5rem;
+    color: #27AE60;
+    background: transparent;
+    border: none;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.nav-toggle:hover {
+    color: #27AE60;
+    transform: rotate(90deg);
+}
+
+.logo {
+    height: 40px;
+    background-color: #000;
+}
+
+.links a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    transition: all 0.3s linear;
+}
+
+.links a:hover {
+    color: #27AE60;
+}
+
+.social-icons {
+    display: none;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+}
+
+.links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.show-links {
+    height: 8rem;
+}
+
+@media screen and (min-width: 900px) {
+    .nav-center {
+        max-width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+    
+    /* .nav-header {
+        padding: 0;
+    } */
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .links {
+        height: auto;
+        display: flex;
+        font-size: 1.5rem;
+    }
+
+    .links li {
+        transition: all 0.3s linear;
+    }
+
+    .links li:hover {
+        transform: scale(1.2);
+    }
+
+    .links a {
+        padding: 1rem;
+    }
+
+    .social-icons {
+        display: flex;
+        font-size: 1.5rem;
+    }
+
+    .social-icons li {
+        transition: all 0.3s linear;
+    }
+
+    .social-icons li:hover {
+        transform: scale(1.2);
+    }
+
+    .social-icons a {
+        margin: 0 0.5rem;
+        color: #fff;
+        transition: all 0.3s linear;
+    }
+
+    .social-icons a:hover {
+        color: #27AE60;
+    }
+}
