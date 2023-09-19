@@ -125,7 +125,7 @@ a {
     transform: translate(0);
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 670px) {
     .sidebar {
         width:400px;
     }
