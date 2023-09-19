@@ -1,4 +1,4 @@
-const questions = document.querySelectorAll(".question")
+const questions = document.querySelectorAll(".question");
 
 questions.forEach((question) => {
     const btn = question.querySelector(".toggle--btn")
