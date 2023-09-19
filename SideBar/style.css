@@ -1,0 +1,132 @@
+body {
+    background: #151616;
+    font-family: "Poppins",sans-serif;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    justify-self: center;
+    height: 3rem;
+    padding-top: 1rem;
+}
+
+.toggle--btn {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    background: transparent;
+    border: none;
+    color: #27AE60;
+    font-size: 2.5rem;
+    transition: all 3s linear;
+    cursor: pointer;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.close--btn {
+    background: transparent;
+    border: none;
+    color: rgb(210, 39, 39);
+    font-size: 2.2rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.close--btn:hover {
+    color: rgb(199, 12, 12);
+    transform: rotate(90deg);
+}
+
+.tabs a {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s linear;
+}
+
+.tabs a:hover {
+    background: #27AE60;
+    padding-left: 1.75rem;
+    color: #fff;
+}
+
+.icons {
+    display: flex;
+    justify-self: center;
+    padding-bottom: 2rem;
+}
+
+.icons a {
+    font-size: 2.0rem;
+    margin: 0 1rem;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+
+.icons a:hover {
+    color: #27AE60;
+}
+
+.icons li {
+    transition: all 0.3s linear
+}
+
+.icons li:hover {
+    transform: scale(1.2);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s linear;
+    transform: translate(-100%);
+}
+
+.show--sidebar {
+    transform: translate(0);
+}
+
+@media screen and (min-width: 680px) {
+    .sidebar {
+        width:400px;
+    }
+}
