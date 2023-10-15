@@ -1,0 +1,167 @@
+body {
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    width: 580px;
+    background: linear-gradient(to right, rgb(227, 228, 232), rgb(186, 193, 189));
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 0.875rem;
+    display: block;
+    text-align: center;
+}
+
+.main-container:hover {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+}
+
+.alert {
+    margin-bottom: 1rem;
+    display: grid;
+    height: 1.25rem;
+    align-items: center;
+    text-align: center;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.alert-alert {
+    color: rgb(249, 68, 68);
+    background: rgb(237, 173, 173);
+}
+
+.alert-success {
+    color: rgb(41, 106, 41);
+    background: rgb(183, 246, 183);
+}
+
+h1 {
+    letter-spacing: 0.2rem;
+    font-family:"Poppins",sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content:center;
+}
+
+#input:focus {
+    outline: none;
+}
+
+.submit-btn {
+    background: linear-gradient(90deg, rgb(144, 208, 224), rgb(43, 177, 211));
+    border: none;
+    flex: 0 0 5rem;
+    border-top-right-radius:  0.5rem;
+    border-end-end-radius:  0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    letter-spacing: 0.2rem;
+    font-weight: 100;
+    color: hsl(180, 1%, 14%);
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.001s linear;
+}
+
+.submit-btn:hover {
+    background: hsl(205, 85%, 45%);
+    color: #fff;
+}
+
+#input {
+    font-size: 1rem;
+    background: hsl(200, 17%, 93%); 
+    color: hsl(202, 15%, 40%);
+    border: none;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    padding-left: 1rem;
+    flex: 1 0 auto;
+}
+
+.grocery-container {
+    margin-top: 2rem;
+    transition: all 0.3s linear;
+    visibility: hidden;
+}
+
+.show-container {
+    visibility: visible;
+}
+
+.grocery-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 1rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+    transition: al 0.3s linear;
+    cursor: pointer;
+}
+
+.grocery-item:hover {
+    color: hsl(206, 8%, 34%);
+}
+
+.title {
+    margin-bottom: 0.2;
+    letter-spacing: 2px;
+    transition: all 0.3s linear;
+}
+
+.edit-btn,
+.delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 0.15rem;
+    transition: all 0.3s linear;
+}
+
+.edit-btn {
+    color: rgb(149, 247, 149);
+}
+
+.edit-btn:hover {
+    color: rgb(84, 220, 84);
+}
+
+.delete-btn {
+    color: rgb(238, 96, 96);
+}
+
+.delete-btn:hover {
+    color: rgb(240, 53, 53);
+}
+
+
+.clear-btn {
+    background: transparent;
+    border: none;
+    letter-spacing: 0.3rem;
+    font-size: 1.2rem;
+    color: rgb(238, 128, 128);
+    font-weight: 100;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.clear-btn:hover {
+    color: rgb(204, 66, 66);
+}
