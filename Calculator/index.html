@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    
+    <div class="calculator">
+        <form>
+            <input type="text" class="screen">
+        </form>
+        <div class="pad">
+            <button type="button" class="btn yellow-btn num_operator" data-num="+">+</button>
+            <button type="button" class="btn yellow-btn num_operator" data-num="-">-</button>
+            <button type="button" class="btn yellow-btn num_operator" data-num="*">*</button>
+            <button type="button" class="btn yellow-btn num_operator" data-num="/">/</button>            
+            
+            <button type="button" class="btn grey-btn num_operator" data-num="7">7</button>
+            <button type="button" class="btn grey-btn num_operator" data-num="8">8</button>
+            <button type="button" class="btn grey-btn num_operator" data-num="9">9</button>
+            <button type="button" class="btn grey-btn num_operator" data-num="0">0</button>
+
+            <button type="button" class="btn grey-btn num_operator" data-num="4">4</button>
+            <button type="button" class="btn grey-btn num_operator" data-num="5">5</button>
+            <button type="button" class="btn grey-btn num_operator" data-num="6">6</button>
+            <button type="button" class="btn grey-btn num_operator" data-num=".">.</button>
+
+            <button type="button" class="btn grey-btn num_operator" data-num="1">1</button>
+            <button type="button" class="btn grey-btn num_operator" data-num="2">2</button>
+            <button type="button" class="btn grey-btn num_operator" data-num="3">3</button>
+            <button type="button" class="btn equal-btn equal" data-num="=">=</button>
+
+            <button type="button" class="btn AC-btn clear" data-num="AC">AC</button>
+            <button type="button" class="btn back-btn back" data-num="AC">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
